@@ -23,7 +23,12 @@ function calculateGPA(){
         // finalCredits.push(ele.);
     }
     console.log(finalCredits); 
-    calGpa();
+    var output=document.getElementById("output");
+    var result=calGpa();
+    if(result.toString()=='NaN')
+        output.value='Make sure You filled all the fields';    
+    else
+        output.value=' Your GPA is : '+result;
 }
 
 /**
@@ -64,6 +69,6 @@ function calGpa(){
     }
     console.log(sumOfGrades);
     console.log(sumOfCredits);
-    alert(sumOfGrades/sumOfCredits);
+    // alert(sumOfGrades/sumOfCredits);
     return(sumOfGrades/sumOfCredits);
 }

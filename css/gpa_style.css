@@ -46,6 +46,16 @@ input{
     border-style: solid;
 }
 
+#output{
+    font-size: x-large;
+    position: auto;
+    bottom: 90px;
+    left:380px;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+}
+
 /*
 #grade1:hover{
     font-size: 20px;
