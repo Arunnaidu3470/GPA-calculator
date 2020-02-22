@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!--Bootstarp-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>        
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,120 +18,173 @@
     <script src="script/script.js"></script>
     <h1>GPA</h1>
 </head>
-    <body>
-        <div id="grade">
-            <div id="grade-sub">
+    <body class="bg-info">
+        <div id="grade" class="container">
+            <div class="row">
+                <div id="grade-sub" class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h4>Subject 1:</h4>
+                            O<input type="radio" name="g1" value="O">
+                            A+<input type="radio" name="g1" value="A+">
+                            A<input type="radio" name="g1" value="A">
+                            B+<input type="radio" name="g1" value="B+">
+                            B<input type="radio" name="g1" value="B">
+                            C<input type="radio" name="g1" value="C">   
+                            D<input type="radio" name="g1" value="D">
+                            E<input type="radio" name="g1" value="E">
+                            F<input type="radio" name="g1" value="F">
+                        </div>
+                        <div class="col-md-4">
+                            credit:<input type="number" id="g1c" value="1">
+                        </div>
+                    </div>
+                </div>
 
-                <h4>Subject 1:</h4>
-                O<input type="radio" name="g1" value="O">
-                A+<input type="radio" name="g1" value="A+">
-                A<input type="radio" name="g1" value="A">
-                B+<input type="radio" name="g1" value="B+">
-                B<input type="radio" name="g1" value="B">
-                C<input type="radio" name="g1" value="C">   
-                D<input type="radio" name="g1" value="D">
-                E<input type="radio" name="g1" value="E">
-                F<input type="radio" name="g1" value="F">
-                credit:<input type="number" id="g1c" value="0">
-            </div>
-            <div id="grade-sub">
-                <h4>Subject 2:</h4>
-                O<input type="radio" name="g2" value="O">
-                A+<input type="radio" name="g2" value="A+">
-                A<input type="radio" name="g2" value="A">
-                B+<input type="radio" name="g2" value="B+">
-                B<input type="radio" name="g2" value="B">
-                C<input type="radio" name="g2" value="C">
-                D<input type="radio" name="g2" value="D">
-                E<input type="radio" name="g2" value="E">
-                F<input type="radio" name="g2" value="F">
-                credit:<input type="number" id="g2c" value="0">
-            </div>
-            <div id="grade-sub">
-                <h4>Subject 3:</h4>
-                O<input type="radio" name="g3" value="O">
-                A+<input type="radio" name="g3" value="A+">
-                A<input type="radio" name="g3" value="A">
-                B+<input type="radio" name="g3" value="B+">
-                B<input type="radio" name="g3" value="B">
-                C<input type="radio" name="g3" value="C">
-                D<input type="radio" name="g3" value="D">
-                E<input type="radio" name="g3" value="E">
-                F<input type="radio" name="g3" value="F">
-                credit:<input type="number" id="g3c" value="0">
-            </div>
-            <div id="grade-sub">
-                <h4>Subject 4:</h4>
-                O<input type="radio" name="g4" value="O">
-                A+<input type="radio" name="g4" value="A+">
-                A<input type="radio" name="g4" value="A">
-                B+<input type="radio" name="g4" value="B+">
-                B<input type="radio" name="g4" value="B">
-                C<input type="radio" name="g4" value="C">
-                D<input type="radio" name="g4" value="D">
-                E<input type="radio" name="g4" value="E">
-                F<input type="radio" name="g4" value="F">
-                credit:<input type="number" id="g4c" value="0">
-            </div>
-            <div id="grade-sub">
-                <h4>Subject 5:</h4>
-                O<input type="radio" name="g5" value="O">
-                A+<input type="radio" name="g5" value="A+">
-                A<input type="radio" name="g5" value="A">
-                B+<input type="radio" name="g5" value="B+">
-                B<input type="radio" name="g5" value="B">
-                C<input type="radio" name="g5" value="C">
-                D<input type="radio" name="g5" value="D">
-                E<input type="radio" name="g5" value="E">
-                F<input type="radio" name="g5" value="F">
-                credit:<input type="number" id="g5c" value="0">
-            </div>
-            <div id="grade-sub"> 
-                <h4>Subject 6:</h4>
-                O<input type="radio" name="g6" value="O">
-                A+<input type="radio" name="g6" value="A+">
-                A<input type="radio" name="g6" value="A">
-                B+<input type="radio" name="g6" value="B+">
-                B<input type="radio" name="g6" value="B">
-                C<input type="radio" name="g6" value="C">
-                D<input type="radio" name="g6" value="D">
-                E<input type="radio" name="g6" value="E">
-                F<input type="radio" name="g6" value="F">
-                credit:<input type="number" id="g6c" value="0">
-            </div>
-            <div id="grade-sub">
-                <h4>Subject 7:</h4>
-                O<input type="radio" name="g7" value="O">
-                A+<input type="radio" name="g7" value="A+">
-                A<input type="radio" name="g7" value="A">
-                B+<input type="radio" name="g7" value="B+">
-                B<input type="radio" name="g7" value="B">
-                C<input type="radio" name="g7" value="C">
-                D<input type="radio" name="g7" value="D">
-                E<input type="radio" name="g7" value="E">
-                F<input type="radio" name="g7" value="F">
-                credit:<input type="number" id="g7c" value="0">
-            </div>
-            <div id="grade-sub">
-                <h4>Subject 8:</h4>
-                O<input type="radio" name="g8" value="O">
-                A+<input type="radio" name="g8" value="A+">
-                A<input type="radio" name="g8" value="A">
-                B+<input type="radio" name="g8" value="B+">
-                B<input type="radio" name="g8" value="B">
-                C<input type="radio" name="g8" value="C">
-                D<input type="radio" name="g8" value="D">
-                E<input type="radio" name="g8" value="E">
-                F<input type="radio" name="g8" value="F">
-                credit:<input type="number" id="g8c" value="0">
-            </div>
-            <div>
-                <input id="calculate" type="button" value="calculate" onclick="calculateGPA()">
-                <div>
-                    <input id="output" type="text" value="Your GPA" disabled>
+                <div id="grade-sub" class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h4>Subject 2:</h4>
+                            O<input type="radio" name="g2" value="O">
+                            A+<input type="radio" name="g2" value="A+">
+                            A<input type="radio" name="g2" value="A">
+                            B+<input type="radio" name="g2" value="B+">
+                            B<input type="radio" name="g2" value="B">
+                            C<input type="radio" name="g2" value="C">
+                            D<input type="radio" name="g2" value="D">
+                            E<input type="radio" name="g2" value="E">
+                            F<input type="radio" name="g2" value="F">
+                        </div>
+                        <div class="col-md-4">
+                            credit:<input type="number" id="g2c" value="1">
+                        </div>
+                    </div>
+                </div>
+                <div id="grade-sub" class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h4>Subject 3:</h4>
+                            O<input type="radio" name="g3" value="O">
+                            A+<input type="radio" name="g3" value="A+">
+                            A<input type="radio" name="g3" value="A">
+                            B+<input type="radio" name="g3" value="B+">
+                            B<input type="radio" name="g3" value="B">
+                            C<input type="radio" name="g3" value="C">
+                            D<input type="radio" name="g3" value="D">
+                            E<input type="radio" name="g3" value="E">
+                            F<input type="radio" name="g3" value="F">
+                        </div>
+                        <div class="col-md-4">
+                            credit:<input type="number" id="g3c" value="1">
+                        </div>
+                    </div>
+                </div>
+                <div id="grade-sub" class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h4>Subject 4:</h4>
+                            O<input type="radio" name="g4" value="O">
+                            A+<input type="radio" name="g4" value="A+">
+                            A<input type="radio" name="g4" value="A">
+                            B+<input type="radio" name="g4" value="B+">
+                            B<input type="radio" name="g4" value="B">
+                            C<input type="radio" name="g4" value="C">
+                            D<input type="radio" name="g4" value="D">
+                            E<input type="radio" name="g4" value="E">
+                            F<input type="radio" name="g4" value="F">
+                        </div>
+                        <div class="col-md-4">
+                            credit:<input type="number" id="g4c" value="1">
+                        </div>
+                    </div>
+                </div>
+                <div id="grade-sub" class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h4>Subject 5:</h4>
+                            O<input type="radio" name="g5" value="O">
+                            A+<input type="radio" name="g5" value="A+">
+                            A<input type="radio" name="g5" value="A">
+                            B+<input type="radio" name="g5" value="B+">
+                            B<input type="radio" name="g5" value="B">
+                            C<input type="radio" name="g5" value="C">
+                            D<input type="radio" name="g5" value="D">
+                            E<input type="radio" name="g5" value="E">
+                            F<input type="radio" name="g5" value="F">
+                        </div>
+                        <div class="col-md-4">
+                            credit:<input type="number" id="g5c" value="1">
+                        </div>
+                    </div>
+                </div>
+                <div id="grade-sub" class="col-md-12"> 
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h4>Subject 6:</h4>
+                            O<input type="radio" name="g6" value="O">
+                            A+<input type="radio" name="g6" value="A+">
+                            A<input type="radio" name="g6" value="A">
+                            B+<input type="radio" name="g6" value="B+">
+                            B<input type="radio" name="g6" value="B">
+                            C<input type="radio" name="g6" value="C">
+                            D<input type="radio" name="g6" value="D">
+                            E<input type="radio" name="g6" value="E">
+                            F<input type="radio" name="g6" value="F">
+                        </div>
+                        <div class="col-md-4">
+                            credit:<input type="number" id="g6c" value="1">
+                        </div>
+                    </div>
+                </div>
+                <div id="grade-sub" class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h4>Subject 7:</h4>
+                            O<input type="radio" name="g7" value="O">
+                            A+<input type="radio" name="g7" value="A+">
+                            A<input type="radio" name="g7" value="A">
+                            B+<input type="radio" name="g7" value="B+">
+                            B<input type="radio" name="g7" value="B">
+                            C<input type="radio" name="g7" value="C">
+                            D<input type="radio" name="g7" value="D">
+                            E<input type="radio" name="g7" value="E">
+                            F<input type="radio" name="g7" value="F">
+                        </div>
+                        <div class="col-md-4">
+                            credit:<input type="number" id="g7c" value="1">
+                        </div>
+                    </div>
+                </div>
+                <div id="grade-sub" class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h4>Subject 8:</h4>
+                            O<input type="radio" name="g8" value="O">
+                            A+<input type="radio" name="g8" value="A+">
+                            A<input type="radio" name="g8" value="A">
+                            B+<input type="radio" name="g8" value="B+">
+                            B<input type="radio" name="g8" value="B">
+                            C<input type="radio" name="g8" value="C">
+                            D<input type="radio" name="g8" value="D">
+                            E<input type="radio" name="g8" value="E">
+                            F<input type="radio" name="g8" value="F">
+                        </div>
+                        <div class="col-md-4">
+                            credit:<input type="number" id="g8c" value="1">
+                        </div>
+                    </div>
+                </div>
+                <div  class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <input id="calculate" type="button" value="calculate" onclick="calculateGPA()">
+                        </div>
+                        <div class="col-md-4">
+                            <input id="output" type="text" value="Your GPA" disabled>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </body>
 </html>
